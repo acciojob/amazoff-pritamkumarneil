@@ -11,11 +11,11 @@ public class DeliveryPartner {
     }
 
     public String getId() {
-        return id;
+        return this.id;
     }
 
     public Integer getNumberOfOrders(){
-        return numberOfOrders;
+        return this.numberOfOrders;
     }
 
     public void setNumberOfOrders(Integer numberOfOrders) {
