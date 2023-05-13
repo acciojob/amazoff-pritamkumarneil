@@ -9,16 +9,17 @@ import java.util.Map;
 
 @Repository
 public class OrderRepository {
-    Map<String, Order> orderMap;
-    Map<String, DeliveryPartner> deliveryPartnerMap;
-    Map<String,String> orderPartnerPairMap;
-    Map<String, List<Order>> deliveryPartnerToOrder;
-    public OrderRepository(){
-        orderMap=new HashMap<>();
-        deliveryPartnerMap=new HashMap<>();
-        orderPartnerPairMap=new HashMap<>();
-        deliveryPartnerToOrder=new HashMap<>();
-    }
+    Map<String, Order> orderMap=new HashMap<>();
+    Map<String, DeliveryPartner> deliveryPartnerMap=new HashMap<>();
+    Map<String,String> orderPartnerPairMap=new HashMap<>();
+    Map<String, List<Order>> deliveryPartnerToOrder=new HashMap<>();
+//    public OrderRepository(){
+//        orderMap=new HashMap<>();
+//        deliveryPartnerMap=new HashMap<>();
+//        orderPartnerPairMap=new HashMap<>();
+//        deliveryPartnerToOrder=new HashMap<>();
+//    }
+    public OrderRepository(){}
     public void addOrder(Order order) {
         orderMap.put(order.getId(),order);
     }
