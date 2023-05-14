@@ -19,7 +19,7 @@ public class OrderRepository {
 //        orderPartnerPairMap=new HashMap<>();
 //        deliveryPartnerToOrder=new HashMap<>();
 //    }
-    public OrderRepository(){}
+//    public OrderRepository(){}
     public void addOrder(Order order) {
         orderMap.put(order.getId(),order);
     }
@@ -71,13 +71,13 @@ public class OrderRepository {
     }
 
     public List<String> getAllOrders() {
-//        return new ArrayList<>(orderMap.keySet());
-        List<String> orders=new ArrayList<>();
-        for(String orderId: orderMap.keySet()){
-//            orders.add(orderId);
-            orders.add(orderMap.get(orderId).toString());
-        }
-        return orders;
+        return new ArrayList<>(orderMap.keySet());
+//        List<String> orders=new ArrayList<>();
+//        for(String orderId: orderMap.keySet()){
+////            orders.add(orderId);
+//            orders.add(orderMap.get(orderId).toString());
+//        }
+//        return orders;
     }
 
     public Integer getCountOfUnassignedOrders() {
